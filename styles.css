@@ -1,7 +1,20 @@
+:root {
+  font-size: 24px;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
 body {
   height: 100vh;
   width: 100vw;
   margin: 0;
+}
+
+form {
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  background-color: white;
+  width: 70%;
 }
 
 .bg-img {
@@ -18,11 +31,65 @@ body {
 
 .flex-background-left {
   display: flex;
-  width: 30vw;
+  box-sizing: border-box;
+  width: 30%;
 }
+
 
 .flex-background-right {
   display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
   background-color: white;
-  min-width: 70vw;
+
+}
+
+.flex-right-top {
+  max-height: 33%;
+  padding: 6% 10% 6% 5%;
+}
+
+.flex-right-center {
+  min-height: 30%;
+  border-top: 1px solid lightgrey;
+  border-bottom: 1px solid lightgrey;
+  padding: 3% 10% 3% 5%;
+  display: flex;
+
+}
+
+.flex-right-bottom {
+  max-height: 33%;
+  padding: 3% 10% 10% 5%;
+}
+
+input[type='button'] {
+  background-color: rgb(122, 153, 122);
+}
+
+form ul, fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+form ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+
+form ul li {
+  list-style-type: none;
+  margin: 10px 10px 10px 0;
+  padding: 10px 30px 10px 0;
+  display: flex;
+  max-width: 300px;
+  flex-direction: column;
+  flex-basis: 40%;
+}
+
+label {
+  position: relative;
 }
