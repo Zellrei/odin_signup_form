@@ -73,7 +73,7 @@ fieldset {
 }
 
 .flex-right-top {
-  max-height: 33%;
+  max-height: 30%;
   padding: 6% 10% 6% 5%;
   font-weight: bold;
 }
@@ -82,13 +82,13 @@ fieldset {
   min-height: 30%;
   border-top: 1px solid lightgrey;
   border-bottom: 1px solid lightgrey;
-  padding: 3% 10% 3% 5%;
+  padding: 5% 10% 4% 5%;
   display: flex;
   box-shadow: 2px 2px 5px 1px rgba(126, 126, 126, 0.26);
 }
 
 .flex-right-bottom {
-  max-height: 33%;
+  max-height: 30%;
   padding: 3% 10% 10% 5%;
 }
 
@@ -154,4 +154,18 @@ button[type='submit']:hover {
 button[type='submit']:active {
   transform: scale(0.5);
   background-color: rgb(75, 163, 64);
+}
+
+#pwd-field {
+  position: relative;
+}
+
+#pwd-requirements {
+  position: absolute;
+  font-size: 10px;
+  color: rgb(255, 2, 2);
+  margin: 0;
+  padding: 0;
+  top: 60px;
+  opacity:0;
 }

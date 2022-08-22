@@ -30,7 +30,16 @@
               <li><label for="email">Email</label><input type="email" id="email" name="email" placeholder=' ' required></li>
               <li><label for="phone">Phone number</label><input type="tel" id="phone" name="phone" pattern="^(?:0|\(?\+33\)?\s?|0033\s?)[1-79](?:[\.\-\s]?\d\d){4}$
                 " required></li>
-              <li><label for="password">Password</label><input type="password" id="password" name="password" required></li>
+              <li id="pwd-field"><label for="password">Password</label><input type="password" id="password" name="password" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$
+                " required>
+                <div id="pwd-requirements">
+                  <div>Password must contain the following:</div>
+                  <div id="letter" class="invalid">A <b>lowercase</b> letter</div>
+                  <div id="capital" class="invalid">A <b>capital (uppercase)</b> letter</div>
+                  <div id="number" class="invalid">A <b>number</b></div>
+                  <div id="length" class="invalid">Minimum <b>8 characters</b></div>
+                </div>
+              </li>
               <li><label for="confirmPassword">Confirm password</label><input type="password" id="confirmPassword" name="confirmPassword" required></li>
             </ul>
           </fieldset>
@@ -43,6 +52,6 @@
       </div>
     </form>
   </div>
-  
+  <script src="script.js"></script>
 </body>
 </html>
