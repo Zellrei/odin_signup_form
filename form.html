@@ -8,13 +8,14 @@
   <link rel="stylesheet" href="styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Secular+One&display=swap" rel="stylesheet">
 </head>
 <body>
  
   <div class="bg-img flex-global-container">
     <div class="flex-background-left">
-
+      <div class="odin-logo"><img src="img/odin-lined.png" alt="white logo for the Odin Project"> The Odin Project</div>
+      <div>Photo by <a href="https://unsplash.com/@stteee?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Stephen H</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></div>
     </div>
     <form action="http://httpbin.org/post" method="post">
       <div class="flex-background-right">
@@ -22,37 +23,26 @@
           <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</p>
           <p>You <em>know</em> you want to.</p></div>
         <div class="flex-right-center">
-          <fieldset>Let's do this !
+          <fieldset>Please fill out this form (all fields are required)
             <ul>
-              <li><label for="firstName">First Name</label><input type="text" id="firstName" name="firstName"></li>
-              <li><label for="lastName">Last Name</label><input type="text" id="lastName" name="lastName"></li>
-              <li><label for="email">Email</label><input type="email" id="email" name="email"></li>
-              <li><label for="phone">Phone number</label><input type="tel" id="phone" name="phone"></li>
-              <li><label for="password">Password</label><input type="password" id="password" name="password"></li>
-              <li><label for="confirmPassword">Confirm password</label><input type="password" id="confirmPassword" name="confirmPassword"></li>
+              <li><label for="firstName">First Name</label><input type="text" id="firstName" class="form-field" name="firstName" required></li>
+              <li><label for="lastName">Last Name</label><input type="text" id="lastName" name="lastName" required></li>
+              <li><label for="email">Email</label><input type="email" id="email" name="email" placeholder=' ' required></li>
+              <li><label for="phone">Phone number</label><input type="tel" id="phone" name="phone" pattern="^(?:0|\(?\+33\)?\s?|0033\s?)[1-79](?:[\.\-\s]?\d\d){4}$
+                " required></li>
+              <li><label for="password">Password</label><input type="password" id="password" name="password" required></li>
+              <li><label for="confirmPassword">Confirm password</label><input type="password" id="confirmPassword" name="confirmPassword" required></li>
             </ul>
-
-
-
           </fieldset>
-
-
-
         </div>
         
-        
-        
-        
-        
         <div class="flex-right-bottom">
-          <input type="button" value="Create Account">
+          <button type="submit" value="">Create Account</button>
           <div>Already have an account ? <a href="#" title="log in page">Log in here</a></div>
         </div>
       </div>
     </form>
   </div>
-  
-  <!-- Photo by <a href="https://unsplash.com/@stteee?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Stephen H</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> -->
   
 </body>
 </html>
