@@ -1,12 +1,7 @@
-let bool8Char = false;
-let boolLowercase = false;
-let boolUppercase = false;
-let boolNumber = false;
-
 const pwdField = document.getElementById('password');
 const pwdRequirements = document.getElementById('pwd-requirements');
 
-pwdField.onkeydown = function() {pwdRequirements.classList.remove('hidden')};
+pwdField.addEventListener('keyup', () => {pwdRequirements.classList.remove('hidden')});
 pwdField.addEventListener('keyup', () => pwdMatchesConfirm());
 pwdField.addEventListener('keyup', () => pwdValidation());
 

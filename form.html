@@ -25,11 +25,11 @@
         <div class="flex-right-center">
           <fieldset>Please fill out this form (all fields are required)
             <ul>
-              <li><label for="firstName">First Name</label><input type="text" id="firstName" class="form-field" name="firstName" required></li>
-              <li><label for="lastName">Last Name</label><input type="text" id="lastName" name="lastName" required></li>
+              <li><label for="firstName">First Name</label><input type="text" id="firstName" class="form-field" name="firstName" placeholder=' ' required></li>
+              <li><label for="lastName">Last Name</label><input type="text" id="lastName" name="lastName" placeholder=' ' required></li>
               <li><label for="email">Email</label><input type="email" id="email" name="email" placeholder=' ' required></li>
-              <li><label for="phone">Phone number</label><input type="tel" id="phone" name="phone" pattern="^(?:0|\(?\+33\)?\s?|0033\s?)[1-79](?:[\.\-\s]?\d\d){4}$" required></li>
-              <li id="pwd-field"><label for="password">Password</label><input type="password" id="password" name="password" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required>
+              <li><label for="phone">Phone number</label><input type="tel" id="phone" name="phone" pattern="^(?:0|\(?\+33\)?\s?|0033\s?)[1-79](?:[\.\-\s]?\d\d){4}$" placeholder=' ' required></li>
+              <li id="pwd-field"><label for="password">Password</label><input type="password" id="password" name="password" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" placeholder=' ' required>
                 <div id="pwd-requirements" class="hidden">
                   <div>Password must contain the following:</div>
                   <div class="pwd-req-flex">
@@ -40,7 +40,7 @@
                   </div>
                 </div>
               </li>
-              <li id="confirm-pwd-field"><label for="confirm-password">Confirm password</label><input type="password" id="confirm-password" name="confirm-password" required>
+              <li id="confirm-pwd-field"><label for="confirm-password">Confirm password</label><input type="password" id="confirm-password" name="confirm-password" placeholder=' ' required>
                 <div id="confirm-msg" class="hidden">Passwords match</div>
               </li>
             </ul>
