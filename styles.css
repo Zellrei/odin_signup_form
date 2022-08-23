@@ -48,12 +48,17 @@ fieldset {
   font-size: 14px;
 }
 
+.photo-credits {
+  margin-top: auto;
+  margin-bottom: 0;
+}
+
 .odin-logo {
   box-sizing: border-box;
   font-size: 36px;
-  height: 125px;
+  height: 140px;
   width: 100%;
-  margin: auto;
+  margin: 200px 0;
   background-color: rgba(128, 128, 128, 0.3);
   display: flex;
   justify-content: center;
