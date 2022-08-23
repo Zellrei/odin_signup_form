@@ -20,7 +20,7 @@
     <form action="http://httpbin.org/post" method="post">
       <div class="flex-background-right">
         <div class="flex-right-top">
-          <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</p>
+          <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started. &#x2714;</p>
           <p>You <em>know</em> you want to.</p></div>
         <div class="flex-right-center">
           <fieldset>Please fill out this form (all fields are required)
@@ -28,19 +28,19 @@
               <li><label for="firstName">First Name</label><input type="text" id="firstName" class="form-field" name="firstName" required></li>
               <li><label for="lastName">Last Name</label><input type="text" id="lastName" name="lastName" required></li>
               <li><label for="email">Email</label><input type="email" id="email" name="email" placeholder=' ' required></li>
-              <li><label for="phone">Phone number</label><input type="tel" id="phone" name="phone" pattern="^(?:0|\(?\+33\)?\s?|0033\s?)[1-79](?:[\.\-\s]?\d\d){4}$
-                " required></li>
-              <li id="pwd-field"><label for="password">Password</label><input type="password" id="password" name="password" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$
-                " required>
-                <div id="pwd-requirements">
+              <li><label for="phone">Phone number</label><input type="tel" id="phone" name="phone" pattern="^(?:0|\(?\+33\)?\s?|0033\s?)[1-79](?:[\.\-\s]?\d\d){4}$" required></li>
+              <li id="pwd-field"><label for="password">Password</label><input type="password" id="password" name="password" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required>
+                <div id="pwd-requirements" class="hidden">
                   <div>Password must contain the following:</div>
-                  <div id="letter" class="invalid">A <b>lowercase</b> letter</div>
-                  <div id="capital" class="invalid">A <b>capital (uppercase)</b> letter</div>
-                  <div id="number" class="invalid">A <b>number</b></div>
-                  <div id="length" class="invalid">Minimum <b>8 characters</b></div>
+                  <div id="letter" class="validation-nok">A lowercase letter</div>
+                  <div id="capital" class="validation-nok">A capital (uppercase) letter</div>
+                  <div id="number" class="validation-nok">A number</div>
+                  <div id="length" class="validation-nok">Minimum 8 characters</div>
                 </div>
               </li>
-              <li><label for="confirmPassword">Confirm password</label><input type="password" id="confirmPassword" name="confirmPassword" required></li>
+              <li id="confirm-pwd-field"><label for="confirm-password">Confirm password</label><input type="password" id="confirm-password" name="confirm-password" required>
+                <div id="confirm-msg" class="hidden">Passwords match</div>
+              </li>
             </ul>
           </fieldset>
         </div>

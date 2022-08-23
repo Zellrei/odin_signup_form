@@ -27,14 +27,13 @@ fieldset {
 
 .bg-img {
   background-image: url('img/background.jpg');
-  height: 100vh;
   width: 100vw;
   background-repeat: no-repeat;
   background-attachment: fixed;
   display: flex;
   flex-direction: row;
   padding: 0;
-  margin: 0;
+  margin: 0;  
 }
 
 .flex-background-left {
@@ -82,7 +81,7 @@ fieldset {
   min-height: 30%;
   border-top: 1px solid lightgrey;
   border-bottom: 1px solid lightgrey;
-  padding: 5% 10% 4% 5%;
+  padding: 5% 10% 5% 5%;
   display: flex;
   box-shadow: 2px 2px 5px 1px rgba(126, 126, 126, 0.26);
 }
@@ -163,9 +162,49 @@ button[type='submit']:active {
 #pwd-requirements {
   position: absolute;
   font-size: 10px;
-  color: rgb(255, 2, 2);
   margin: 0;
   padding: 0;
   top: 60px;
-  opacity:0;
+}
+
+#confirm-pwd-field {
+  position: relative;
+}
+
+#confirm-msg {
+  position: absolute;
+  font-size: 10px;
+  margin: 0;
+  padding: 0;
+  top: 60px;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.visible {
+  visibility: visible;
+}
+
+.validation-ok {
+  visibility: visible;
+  color: green;
+}
+
+.validation-ok::before {
+  position: relative;
+  left: -2px;
+  content: "\2714"; 
+}
+
+.validation-nok {
+  visibility: visible;
+  color: red;
+}
+
+.validation-nok::before {
+  position: relative;
+  left: -2px;
+  content: "\2718";
 }
