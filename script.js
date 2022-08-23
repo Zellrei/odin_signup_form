@@ -5,9 +5,8 @@ let boolNumber = false;
 
 const pwdField = document.getElementById('password');
 const pwdRequirements = document.getElementById('pwd-requirements');
+
 pwdField.onkeydown = function() {pwdRequirements.classList.remove('hidden')};
-
-
 pwdField.addEventListener('keyup', () => pwdMatchesConfirm());
 pwdField.addEventListener('keyup', () => pwdValidation());
 
@@ -65,10 +64,12 @@ function pwdMatchesConfirm () {
       confirmMsg.classList.add('validation-ok');
       confirmMsg.classList.remove('validation-nok');
       confirmMsg.textContent = 'Passwords match';
+      pwdConfirmField.setCustomValidity("");
     } else if (pwdField.value !== pwdConfirmField.value) {
       confirmMsg.classList.add('validation-nok');
       confirmMsg.classList.remove('validation-ok');
       confirmMsg.textContent = 'Passwords do not match';
+      pwdConfirmField.setCustomValidity("Passwords do not Match");
     }
   } else if (pwdConfirmField.value.length == 0) {
     confirmMsg.textContent = '';

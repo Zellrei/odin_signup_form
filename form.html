@@ -32,10 +32,12 @@
               <li id="pwd-field"><label for="password">Password</label><input type="password" id="password" name="password" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required>
                 <div id="pwd-requirements" class="hidden">
                   <div>Password must contain the following:</div>
-                  <div id="letter" class="validation-nok">A lowercase letter</div>
-                  <div id="capital" class="validation-nok">A capital (uppercase) letter</div>
-                  <div id="number" class="validation-nok">A number</div>
-                  <div id="length" class="validation-nok">Minimum 8 characters</div>
+                  <div class="pwd-req-flex">
+                    <div id="letter">A lowercase letter</div>
+                    <div id="capital">A capital (uppercase) letter</div>
+                    <div id="number">A number</div>
+                    <div id="length">Minimum 8 characters</div>
+                  </div>
                 </div>
               </li>
               <li id="confirm-pwd-field"><label for="confirm-password">Confirm password</label><input type="password" id="confirm-password" name="confirm-password" required>
